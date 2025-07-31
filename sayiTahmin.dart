@@ -12,12 +12,13 @@ void main(List<String> args) {
   do {
     tahmin = int.parse(stdin.readLineSync()!);
     sayac++;
-    puan = puan - 10;
 
     if (tahmin < sayi) {
       print("daha buyuk");
+      puan -= 10;
     } else if (tahmin > sayi) {
       print("daha kucuk");
+      puan -= 10;
     } else {
       print("tebrikler $sayac tahminde dogru sayiyi buldunuz.");
       print("puanınız $puan.");
